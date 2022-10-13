@@ -1,0 +1,767 @@
+﻿<html>
+	<head>
+		<title>temp</title>
+		<style type="text/css">
+			
+			body{
+			background:grey;
+			}
+			#mainarea{
+			width:1300px;
+			height:2550px;
+			background:#2A3E63;
+			margin:0 auto;
+			}
+			#warea{
+			width:1300px;
+			height:200px;
+			background:#25334D;
+			}
+				
+			#area1{
+			width:1200px;
+			height:200px;
+			background:#25334D;
+			margin:0 auto;
+			}
+				#toparea{
+				width:1200px;
+				height:150px;
+				background:#25334D;
+				}
+					#logoarea{
+					width:180px;
+					height:130px;
+					background:#25334D;
+					float:left;
+					padding:10px;
+					}
+					#namearea{
+					width:1000px;
+					height:150px;
+					background:#25334D;
+					float:left;
+					}
+						#nametop{
+						width:1000px;
+						height:60px;
+						background:#25334D;
+						border-bottom:1px solid white;
+						font-size:50px;
+						font-weight:bold;
+						color:white;
+						padding-top:40px;
+						overflow:hidden;
+						/*padding:50px 20px 0px 30px;*/
+						}
+						#namebottom{
+						width:1000px;
+						height:40px;
+						background:#25334D;
+						color:white;
+						padding-top:10px;
+						/*padding:10px 20px 20px 30px;*/
+						font-size:20px;
+						}
+						
+				#bottomarea{
+				width:1180px;
+				height:50px;
+				background:#25334D;
+				padding-left:20px;
+				}
+					#bottomarea ul{
+					list-style:none;
+					margin:0;
+					padding:0;
+					}
+				
+					#bottomarea ul li a:link,#bottomarea ul li a:visited{
+					color:white;
+					padding:15px 25px;
+					text-decoration:none;
+					display:block;
+					font-weight:bolder;
+					}
+					#bottomarea ul li a:hover{
+					color:white;
+					text-decoration:underline;
+					transform:scale(1.1,1.1);
+					}
+					#bottomarea ul li{
+					float:left;
+					}
+						#bottomarea ul li ul{
+						display:none;
+						}
+						#bottomarea ul li:hover ul{
+						display:block;
+						position:absolute;
+						z-index:1000;
+						font-size:10px;
+						background:#25334D;
+						text-decoration:none;
+						}
+						#bottomarea ul li:hover ul li{
+						float:none;
+						border-bottom:1px solid white;
+						}
+						#bottomarea ul li:hover ul li:last-child{
+						border:none;
+						}
+			#area2{
+			width:1300px;
+			height:50px;
+			background:#03515E;
+			margin:0 auto;
+			}
+				#area2left{
+				width:180px;
+				height:20px;
+				background:#03515E;
+				float:left;
+				color:white;
+				padding:15px 10px;
+				font-weight:bold;
+				font-size:20px;
+				
+				}
+				#area2right{
+				width:1100px;
+				height:20px;
+				background:#03515E;
+				float:left;
+				color:white;
+				font-size:20px;
+				padding:15px 0;
+				}
+			#area3{
+			width:1300px;
+			height:750px;
+			margin:0 auto;
+			position:relative;
+			}
+				#area3:hover{
+				opacity:0.7;
+				transition:4s;
+				background-image:linear-gradient(#5F7EA7 0%,#2F4F79 100%);
+				}
+				#area3top{
+				width:1300px;
+				height:600px;
+				background:transparent;
+				position:absolute;
+				top:0px;
+				text-align:center;
+				padding-top:100px;
+				opacity:0;
+				}
+					#area3top h1,#area3top h2{
+					text-shadow:5px 5px 5px #C8371E;
+					font-size:40px;
+					display:none;
+					}
+					#area3top:hover h1,#area3top:hover h2{
+					display:block;
+					transition:4s;
+					}
+					#area3top:hover{
+					opacity:1;
+					transition:4s;
+					}
+				#area3bottom{
+				width:1300px;
+				height:50px;
+				background:#2A3E63;
+				position:absolute;
+				}
+					#mix{
+					width:950px;
+					height:50px;
+					background:#2A3E63;
+					margin:0 auto;
+					opacity:1;
+					}
+						#mix1{
+						width:258px;
+						height:248px;
+						background:#05606F;
+						/*background-image:repeating-radial-gradient(lightblue 0%,#25334D 20%);*/
+						float:left;
+						margin:-250px 0 10px 0;
+						border:1px solid #DB7514;
+						overflow:hidden;
+						opacity:1;
+						text-align:center;
+						padding:20px;
+						color:white;
+						}
+							#mix1 p{
+							font-size:20px;
+							}
+						#mix2{
+						width:258px;
+						height:248px;
+						background:#077E8B;
+						/*background-image:repeating-radial-gradient(lightblue 0%,#25334D 20%);*/
+						float:left;
+						margin:-250px 0 10px 0;
+						border:1px solid #DB7514;
+						overflow:hidden;
+						opacity:1;
+						text-align:center;
+						padding:20px;
+						color:white;
+						}
+							#mix2 p{
+							font-size:20px;
+							}
+						#mix3{
+						width:258px;
+						height:248px;
+						background:#05606F;
+						/*background-image:repeating-radial-gradient(lightblue 0%,#25334D 20%);*/
+						float:left;
+						margin:-250px 0 10px 0;
+						border:1px solid #DB7514;
+						overflow:hidden;
+						opacity:1;
+						text-align:center;
+						padding:20px;
+						color:white;
+						}
+							#mix3 p{
+							font-size:20px;
+							}	
+			#area4{
+			width:1300px;
+			height:400px;
+			background:#25334D;
+			margin:0 auto;
+			}
+				#area41{
+				width:1300px;
+				height:400px;
+				background:#25334D;
+				margin-top:50px;
+				}
+					#area4left{
+					width:400px;
+					height:400px;
+					background:#25334D;
+					float:left;
+					}
+						#area4left1{
+						width:360px;
+						height:360px;
+						background:#25334D;
+						padding:20px;
+						}
+					#area4right{
+					width:900px;
+					height:400px;
+					background:#25334D;
+					float:left;
+					}
+						#area42{
+						width:900px;
+						height:30px;
+						background:#25334D;
+						color:white;
+						font-weight:bold;
+						font-size:25px;
+						text-align:center;
+						padding:10px 0;
+						text-decoration:underline;
+						}
+						#area4bottom{
+						width:860px;
+						height:310px;
+						background:#25334D;
+						padding:20px;
+						color:white;
+						font-size:20px;
+						text-align:justify;
+						overflow-y:auto;
+						position:relative;
+						}
+							#area4bottom a{
+							padding:10px 25px 10px 25px;
+							background:#19AC8F;
+							color:white;
+							position:absolute;
+							bottom:40px;
+							left:30px;
+							text-decoration:none;
+							font-size:20px;
+							}
+							#area4bottom a:hover{
+							box-shadow:3px 2px 0px 0px #07493C;
+							transform:scale(1.04,1.04) translatey(-5px);
+							transition:transform 1s;
+							}
+								#area4bottom{
+								position:relative;
+								}
+								#area4bottom img{
+								position:absolute;
+								right:5px;
+								top:10px;
+								}
+				
+			#area5{
+			width:1300px;
+			height:400px;
+			background:blue;
+			margin:0 auto;
+			}
+				#area51{
+				width:1300px;
+				height:400px;
+				background:white;
+				margin:0 auto;
+				}
+					#area5left{
+					width:800px;
+					height:400px;
+					background-image:repeating-radial-gradient(lightblue 0%,#25334D 20%);
+					float:left;
+					}
+					#area5right{
+					width:500px;
+					height:400px;
+					background:pink;
+					float:left;
+					}
+						#area5top{
+						width:500px;
+						height:40px;
+						background:#25334D;
+						color:white;
+						font-size:25px;
+						font-weight:bold;
+						text-align:center;
+						padding-top:10px;
+						text-decoration:underline;
+						
+						}
+						#area5bottom{
+						width:460px;
+						height:310px;
+						background:#25334D;
+						color:white;
+						font-size:20px;
+						padding:20px;
+						
+						}
+							#area5bottom marquee ul li:hover{
+							text-decoration:underline;
+							}
+			#area8{
+			width:1300px;
+			height:300px;
+			background:#25334D;
+			}
+				#area81{
+				width:118px;
+				height:118px;
+				background:#25334D;
+				
+				float:left;
+				margin:50px;
+				padding:40px;
+				position:relative;
+				border:1px dashed #80DEC8;
+				color:white;
+				}
+					.area81b{
+					width:150px;
+					height:100px;
+					background:#25334D;
+					position:absolute;
+					top:40px;
+					right:-110px;
+					line-height:15px;
+					font-size:15px;
+					}
+						.area81b b{
+						color:white;
+						}
+				#area82{
+				width:118px;
+				height:118px;
+				background:#25334D;
+				float:left;
+				margin:50px;
+				padding:40px;
+				position:relative;
+				border:1px dashed #FCC62A;
+				color:white;
+				}
+				#area83{
+				width:118px;
+				height:118px;
+				background:#25334D;
+				float:left;
+				margin:50px;
+				padding:40px;
+				position:relative;
+				border:1px dashed #DD3C30;
+				color:white;
+				}
+				#area84{
+				width:118px;
+				height:118px;
+				background:#25334D;
+				float:left;
+				margin:50px;
+				padding:40px;
+				position:relative;
+				border:1px dashed #3D86CB;
+				color:white;
+				}
+				
+			#area6{
+			width:1300px;
+			height:400px;
+			background:#03515E;
+			margin:0 auto;
+			}
+				#area61{
+				width:1300px;
+				height:400px;
+				background:#03515E;
+				margin:0 auto;
+				}
+					#area611{
+					width:400px;
+					height:400px;
+					background:#03515E;
+					float:left;
+					overflow:hidden;
+					}
+						#area611top{
+						width:400px;
+						height:30px;
+						background:#03515E;
+						font-size:25px;
+						color:white;
+						font-weight:bold;
+						text-align:center;
+						padding-top:20px;
+						line-height:10px;
+						}
+						#area611bottom{
+						width:240px;
+						height:270px;
+						background:#05606F;
+						font-size:20px;
+						color:white;
+						text-align:left;
+						padding:20px 30px;
+						border-radius:30px;
+						margin:10px 50px 30px 50px;
+						line-height:30px;
+						overflow:hidden;
+						}
+							#area611bottom a{
+							color:#21CBCD;
+							text-decoration:none;
+							}
+							#area611bottom a:hover{
+							text-decoration:underline;
+							}
+					#area612{
+					width:400px;
+					height:370px;
+					background:#03515E;
+					float:left;
+					overflow:hidden;
+					padding:0 50px 30px 50px;
+					}
+						#area61y{
+						width:400px;
+						height:30px;
+						background:#03515E;
+						font-size:25px;
+						color:white;
+						font-weight:bold;
+						text-align:center;
+						padding-top:20px;
+						line-height:10px;
+						}
+						#area61x{
+						width:400px;
+						height:310px;
+						background:blue;
+						overflow:hidden;
+						border-radius:30px;
+						margin-top:10px;
+						}
+							
+					#area613{
+					width:350px;
+					height:400px;
+					background:#03515E;
+					float:left;
+					}
+						#area613top{
+						width:400px;
+						height:30px;
+						background:#03515E;
+						font-size:25px;
+						color:white;
+						font-weight:bold;
+						text-align:center;
+						padding-top:20px;
+						line-height:10px;
+						}
+						#area613bottom{
+						width:240px;
+						height:270px;
+						background:#05606F;
+						font-size:20px;
+						color:white;
+						text-align:left;
+						padding:20px 30px;
+						border-radius:30px;
+						margin:10px 50px 30px 50px;
+						line-height:30px;
+						overflow:hidden;
+						}
+							#area613bottom a{
+							color:#21CBCD;
+							text-decoration:none;
+							}
+							#area613bottom a:hover{
+							text-decoration:underline;
+							}
+						
+			
+			#area7{
+			width:100%;
+			height:50px;
+			background:#25334D;
+			margin:0 auto;
+			}
+		</style>
+			
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="warea">
+				<div id="area1">
+					<div id="toparea">
+						<div id="logoarea">
+							<img src="images.png" width="100%" height="100%">
+						</div>
+						<div id="namearea">
+							<div id="nametop">
+								VIDYA BHARATI CHINMAYA VIDYALAYA
+							</div>
+							<div id="namebottom">
+								AFFILIATION TO CBSE-3430015
+							</div>
+						</div>
+					</div>
+					<div id="bottomarea">
+						<ul>
+					
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="#">ABOUT US</a>
+								<ul>
+									<li><a href="aboutus.html#top1" >HISTORY</a></li>
+									<li><a href="aboutus.html#top3" >VISION AND MISSION</a></li>
+									<li><a href="aboutus.html#top2">AIMS AND OBJECTIVES</a></li>
+									<li><a href="aboutus.html#top4">CHINMAYA VISION PROGRAM</a></li>
+								</ul>
+							</li>
+							<li><a href="#">SCHOOL DETAILS</a>
+								<ul>
+									<li><a href="infrastructure.html">SCHOOL INFRASTRUCTURE</a></li>
+									<li><a href="faculty.html">FACULTY</a></li>
+									<li><a href="gallery.html">GALLERY</a></li>
+								</ul>
+							</li>
+							<li><a href="schoolactivities.html">SCHOOL ACTIVITIES</a></li>
+							<li><a href="achievement.html">ACHIEVEMENT</a></li>
+							<li><a href="studentcorner.html">STUDENT CORNER</a></li>
+							<li><a href="training.html">TRAINING</a>
+								<ul>
+									<li><a href="training.html">TEACHER'S TRAINING</a></li>
+								</ul>
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+			<div id="area2">
+				<div id="area2left">
+					LATEST UPDATES
+				</div>
+				<div id="area2right">
+					
+						<marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()">VBCV celebrates Ganesh Puja 2022 with great devotion.VBCV declared 2nd Runner Up in YOTTAFIESTA-AN IT FEST Organised by KSMS.VBCV Celebrated 76th year of Independence with great zeal and enthusiasm.Overall CHAMPIONS at Quantum(Interschool Science Fest)2022VBCV produces Class XII Jamshedpur toppers in Pure Science, Bio Science and Commerce .100% results in Humanities.VBCV class X students also come up with flying colours.VBCV Organises Summer Camp for the first time this year from 9.5.2022-15.5.2022.VBCV celebrated 106th Birth Anniversary of Pujya Gurudev,Swami Chinmayanandaji on 8.5.2022.Graduation day celebrated for Class XII and Class X on 22.4.2021 and 23.4.2021 at VBCV.VBCV awarded The Prestigious ALANKAR AWARD...2022VBCV celebrated "SWASTIBHAWATU" FOR CLASS-12 on 22/04/22VBCV celebrated "GRADUATION DAY" FOR CLASS-10 on 23/04/22VBCV won The Swachh Vidyalaya Puruskar among all the schools in the city.Saraswati Puja Organised by VBCV on 5.2.2022.Virtual launch of school ERP software on 43rd Inception Day( February 01, 2022).Vaccination Drive at VBCV on 3rd-4th January,2022.City Level Geeta Chanting Competition to be organised by VBCV on 11.12.2021.VBCV declared Runner-Up in FANTASM-2021 Organised by City Montessori School,Delhi.VBCV declared Runner-Up in an event Esperanza 2021 Organised by Shiksha Niketan.VBCV declared overall Champion in E-AURORA - 2021 ORGANISED BY DAV PUBLIC SCHOOL, BISTUPURVBCV declared Second Runner-Up in an Online Inter school event Horizon ...hosted by Gulmohar High School .Students bagged position in Amrit Mahotsav organised on ocassion of Bhagat Singh JayantiLitzglitz-International English Fest Award Cerermony(11.8.2021)VBCV celebrates-Yoga Week-2K21(15.6.2021-21.6.2021)VBCV celebrates-World Music Day on 21.6.2021VBCV declared overall Champion at International Family event organised by CMS Aliganj on 25.02.2021.VBCV bagged 4 prizes at International event organized by CMS Lucknow.VBCV obtained third position in COFAS 2020 (International Computer Event) in the event AD Tech					
+						</marquee>
+				</div>
+			</div>
+			<div id="area3">
+				<img src="vbcv.jpeg" width="100%" height="100%">
+				<div id="area3top">
+					<h1>HARI OM!!!</h1><br>
+					<h1>WELCOME TO VIDYA BHARATI CHINMAYA VIDYALAYA</h1><br>
+					<h2>A SCHOOL WITH A DIFFERENCE</h2>
+				</div>
+				<div id="area3bottom">
+					<div id="mix">
+						<div id="mix1">
+							<img src="t1.png"><br>
+							<h2>QUALITY TEACHERS</h2>
+							<p>Teachers are best known for educating the students that are placed in their care.</p>
+						</div>
+						<div id="mix2">
+							<img src="t2.png"><br>
+							<h2>BEST CURRICULUM</h2>
+							<p>Being a parent is the most important job you will ever have,and the most indispensable.</p>
+						</div>
+						<div id="mix3">
+							<img src="t3.png"><br>
+							<h2>EDUCATION SYSTEM</h2>
+							<p>The term education system generally refers to public schooling,through high school programs.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="area4">
+				<div id="area41">
+					<div id="area4left">
+						<div id="area4left1">
+							<img src="principal.jpeg" width="100%" height="100%">	
+						</div>
+					</div>
+					<div id="area4right">
+						<div id="area42">
+							PRINCIPAL'S MESSAGE
+						</div>
+						<div id="area4bottom">
+								Hari Om<br>
+Educate children in the right way by instilling in them feelings of self respect and national pride-Swami Chinmayananda
+Today the role of a school is not only to pursue academic excellence but also to motivate and empower its students to be life long learners and productive members of an ever-changing global society. At Vidya Bharati Chinmaya Vidyalaya , we provide an atmosphere to our students for holistic development by providing student centric teaching environment . Gentle enfoldment of the innate potential of the children is encouraged in order to channelize their potential in the pursuit of human excellence. We impart in Chinmayans the tenet of social consciousness and the capacity to formulate ethical opinions. While tramsmitting enriching and innovative learning experiences, we gently edify them to be prepared to stretch their boundaries further and face new challenges outside their comfort zone.
+						
+						<a href="message.html">READ MORE<img src="arrow.jpeg"></a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div id="area5">
+				<div id="area51">
+					<div id="area5left">
+					</div>
+					<div id="area5right">
+						<div id="area5top">
+							NOTICE BOARD
+						</div>
+						<div id="area5bottom">
+								<marquee direction="up" onmouseover="this.stop()" onmouseout="this.start()" height="100%" width="100%">
+									<ul>
+										<li>VBCV awarded VISION AWARD 2019 by Pujya Swami Swaroopanandaji, Global Head Chinmaya Mission on 10.01.2020.</li>
+										<li>VBCV declared overall Champion at International Family Event organised by CMS Aliganj on 25.02.2021.</li>
+										<li>Mr. Vishal Badshah(Head Jamshedpur Plant, TML) unveiled the statue of JN Tata at VBCV on March 3, 2021.</li>
+										<li>VBCV declared Overall Champions at AZIONAIRE -2021( organized by Loyal School Jamshedpur) and FLAIR -2021( organized by BSS Pranav Children World School Sonari Jamshedpur)</li>
+										<li>VBCV Social science Department organizes Quiz-Minecraft Maze from 17.9.2021-31.9.2021</li>
+										<li>VBCV celebrates Yoga Day and World Music Day on 21.06.2021.</a></li>
+										<li>VBCV Social science Department organizes Quiz-Minecraft Maze from 17.9.2021-31.9.2021</li>
+										<li>VBCV organised KIDSBLITZ-Virtual Kidoopedia and GAEA in themonth of February and April-2021.</li>
+										<li>SummerCamp organised by VBCV from 9.5.2022 to 15.5.2022</li>
+										<li>VBCV celebrates Pujya Gurudev Swami Chinmayanandaji's Birth Anniversary on 8.5.2022.</li>
+										<li>VBCV declared Overall Champions at AZIONAIRE -2021( organized by Loyal School Jamshedpur) and FLAIR -2021( organized by BSS Pranav Children World School Sonari Jamshedpur)</li>
+									</ul>
+								</marquee>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div id="area8">
+				<div id="area81">
+					<img src="1.png"  width="100%" height="100%">
+					<div class="area81b">
+						<h2>44+ </h2><br>
+						<b>SCHOOL YEARS</b>
+					</div>
+				</div>
+				<div id="area82">
+					<img src="2.png" width="100%" height="100%">
+					<div class="area81b">
+						<h2>100+</h2><br>
+						<b>TOTAL TEACHERS</b>
+					</div>
+				</div>
+				<div id="area83">
+					<img src="3.png" width="100%" height="100%">
+					<div class="area81b">
+						<h2>3000+ </h2><br>
+						<b>TOTAL STUDENTS</b>
+					</div>
+				</div>
+				<div id="area84">
+					<img src="4.png" width="100%" height="100%">
+					<div class="area81b">
+						<h2>40+ </h2><br>
+						<b>SEMINARS HELD</b>
+					</div>
+				</div>
+			</div>
+			<div id="area6">
+				<div id="area61">
+					<div id="area611">
+						<div id="area611top">
+							QUICKLINKS
+							<hr width="200px" align="center">
+						</div>
+						<div id="area611bottom">
+								<ul>
+									<li><a href="#" >SHANKHNAD</a></li>
+									<li><a href="#" >NEW INITIATIVES</a></li>
+									<li><a href="#">MISSION ACTIVITIES</a></li>
+									<li><a href="#">SCHOOL MAGAZINE</a></li>
+									<li><a href="#">STAFF AND FACULTY</a></li>
+									<li><a href="#">SCHOOL MANAGEMENT</a></li>
+									<li><a href="#">GALERY</a></li>
+								</ul>
+						</div>
+					</div>
+					<div id="area612">
+						<div id="area61y">
+							LOCATION
+							<hr width="200px" align="center">
+						</div>
+						<div id="area61x">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235415.82790343225!2d85.89951463281248!3d22.788664299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e30f141bf63d%3A0xeda0221c6ba67f9b!2sChinmaya%20vidyalaya!5e0!3m2!1sen!2sin!4v1663244524664!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+						</iframe>
+						</div>
+					</div>
+					<div id="area613">
+						<div id="area613top">
+							CONTACT US
+							<hr width="200px" align="center">
+						</div>
+						<div id="area613bottom">
+							<b>VIDYA BHARATI CHINMAYA VIDYALAYA</b><br/>
+							A school With difference<br/>
+							Affiliation to CBSE- 3430015<br/>
+							Telco Colony, Jamshedpur(Jharkhand India)<br/>
+							Tel:<a href="#"> 0657-2286829/2286965 </a><br/>
+							 Mail:<a href="#"> vbcvjsr@gmail.com</a><br/>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div id="area7">
+			</div>
+		</div>
+	</body>
+</html>
